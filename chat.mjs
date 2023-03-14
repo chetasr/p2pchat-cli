@@ -76,9 +76,9 @@ async function view () {
       messageInput.focus()
     }
   })
-  screen.key(['escape'], function() {
-    return process.exit(0);
-  });
+  screen.key(['escape'], function () {
+    return process.exit(0)
+  })
 
   // Add the message list and input to the screen
   screen.append(messageList)
@@ -94,13 +94,13 @@ async function view () {
   room.on('chat', (message) => {
     // console.log(message)
     messageList.addItem(message.nickname + ': ' + message.text)
-    messageList.scrollTo(100);
+    messageList.scrollTo(100)
     screen.render()
   })
   room.on('join', (message) => {
     // console.log(message)
     messageList.addItem(message.nickname + ' joined the chat!')
-    messageList.scrollTo(100);
+    messageList.scrollTo(100)
     screen.render()
   })
 }
