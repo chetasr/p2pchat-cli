@@ -1,0 +1,18 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "corestore": "^6.5.1",
+    "hypercore": "^10.8.0",
+    "hyperswarm": "^4.3.7",
+    "neo-blessed": "^0.2.0",
+    "yargs": "^17.7.1"
+  }
+}
